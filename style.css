@@ -1,0 +1,833 @@
+/*CSS de todo el contenido del sitio web*/
+
+/*Reseteo de CSS*/
+h1, h2, h3, h4, h5, h6, p, a, span, input, textarea, select, option { font-family: 'ARS Maquette Pro'; }
+a, a:hover { text-decoration: none; }
+
+header, main, footer, section, article, aside, figure, figcaption, nav, ul, ol, li, div { display: block; }
+
+h1.entry-title, a.post-edit-link { display: none !important; color: #f00; }
+
+.container { width: 100%; height: auto; display: block; margin: 0 auto !important; padding: 0 !important; float: none !important; }
+#page #content .container .content-area #main .page .entry-header,
+#page #content .container .content-area #main .page .entry-footer { display: none !important; }
+
+
+
+/* CSS propio de Contenido */
+/* Menú móvil */
+aside#menu-movil { width: 100%; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; right: -100%; z-index: 99991; background: #C19E57; }
+
+aside#menu-movil a#abrir { width: 40px; height: 40px; display: block; margin: 0; float: none; position: absolute; top: 20px; left: -90px; background: transparent; transition: all 0.2s ease-in; }
+aside#menu-movil a#abrir i { color: #c58c3e; text-align: center; display: block; padding: 9px 0; font-size: 1.75em; transition: all 0.2s ease-in; }
+aside#menu-movil a#abrir:hover { }
+aside#menu-movil a#abrir:hover i { color: #f0f0f0; transition: all 0.2s ease-in; }
+
+aside#menu-movil a#cerrar { width: 40px; height: 40px; display: block; margin: 0; float: none; position: absolute; top: 20px; right: 20px; background: transparent; }
+aside#menu-movil a#cerrar i { color: #fff; text-align: center; display: block; padding: 9px 0; font-size: 1.75em; }
+aside#menu-movil a#cerrar:hover { }
+aside#menu-movil a#cerrar:hover i { color: #1a2741; transition: all 0.2s ease-in; }
+
+aside#menu-movil nav#menu-principal-movil { width: 195px; height: 345px; display: block; margin: 0 auto; float: none; position: relative; padding: 115px 0 0 0; }
+aside#menu-movil nav#menu-principal-movil a { width: 100%; height: auto; display: block; float: none; position: relative; margin: 0 auto 20px; font-size: 1.25em; line-height: 1em; letter-spacing: 0.02em; text-align: center; color: #fff; font-weight: 500; padding: 0; transition: all 0.2s ease-in; }
+aside#menu-movil nav#menu-principal-movil a:hover { color: #1a2741; transition: all 0.2s ease-in; }
+
+
+
+header#masthead { width: 100%; height: auto; margin: 0 auto; float: none; position: fixed; top: 0; left: 0; z-index: 7999; background: #1a2741; }
+
+/*
+.page-id-5 header#masthead { background: #1a2741; }
+.page-id-10 header#masthead { background: #1a2741; }
+
+.page-id-12  header#masthead { background: url(https://www.avanz.com.co/wp-content/uploads/2020/09/header-servcios.jpg) no-repeat top center; background-size: cover; }
+*/
+
+header#masthead article#menu { width: 1100px; height: 74px; margin: 0 auto; padding: 16px 0; float: none; position: relative; }
+header#masthead article#menu a#logo { width: 142px; height: auto; display: block; margin: 0; float: left; position: relative; transition: all 0.3s ease-in; }
+header#masthead article#menu a#logo:hover { opacity: 0.75; transition: all 0.15s ease-out; }
+header#masthead article#menu a#logo img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+
+
+
+header#masthead article#menu nav.menu-principal { width: 825px; height: auto; margin: 15px 0; padding: 0; float: right; position: relative; }
+header#masthead article#menu nav.menu-principal a { width: auto; height: auto; display: block; float: left; position: relative; font-size: 1em; line-height: 1em; letter-spacing: 0.045em; text-align: center; color: #f0f0f0; font-weight: 400; margin: 0 11px; padding: 0 0 5px; text-decoration: none !important; transition: all 0.3s ease-in; }
+header#masthead article#menu nav.menu-principal a:hover { color: #C19E57; text-decoration: none !important; transition: all 0.15s ease-out; }
+
+header#masthead article#menu nav.menu-principal a#spf { width: 165px; height: 30px; margin: -9px 0 0 0; float: right; position: relative; padding: 0; font-size: 1.1em; transition: all 0.2s ease-in; }
+header#masthead article#menu nav.menu-principal a#spf:hover { transition: all 0.15s ease-out; }
+
+header#masthead article#menu nav.menu-principal a#spf span { width: 128px; height: auto; display: block; font-size: 0.9em; line-height: 1em; letter-spacing: 0.035em; text-align: center; color: #1a2741; font-weight: 600; margin: 2px 7px 0 0; padding: 8.5px 7px 9px; float: left; text-transform: uppercase; background: #C19E57; border-radius: 25px; transition: all 0.3s ease-in; }
+header#masthead article#menu nav.menu-principal a#spf i { font-size: 2.05em; color: #C19E57; float: left; padding: 2px 0 0 0; width: 30px; height: 24px; transition: all 0.3s ease-in; }
+
+header#masthead article#menu nav.menu-principal a#spf:hover span { color: #1a2741; background: #fff; transition: all 0.15s ease-out; }
+header#masthead article#menu nav.menu-principal a#spf:hover i { color: #fff; transition: all 0.15s ease-out; }
+
+.page-id-5 header#masthead article#menu nav.menu-principal a:nth-child(1) { color: #C19E57; border-bottom: solid 2px #C19E57; }
+.page-id-10 header#masthead article#menu nav.menu-principal a:nth-child(2) { color:#C19E57; border-bottom: solid 2px #C19E57; }
+
+.page-id-20 header#masthead article#menu nav.menu-principal a:nth-child(3) { color: #C19E57; border-bottom: solid 2px #C19E57; }
+.single-post header#masthead article#menu nav.menu-principal a:nth-child(3) { color: #C19E57; border-bottom: solid 2px #C19E57; }
+
+.page-id-218 header#masthead article#menu nav.menu-principal a:nth-child(3) { color: #C19E57; border-bottom: solid 2px #C19E57; }
+
+.page-id-12 header#masthead article#menu nav.menu-principal a:nth-child(4) { color: #C19E57; border-bottom: solid 2px #C19E57; }
+
+
+
+/*main*/
+main#content { width: 100%; height: auto; display: block; margin: 74px auto 0 auto; float: none; position: relative; }
+
+
+
+/*slide*/
+main#content div section#slide { width: 100%; height: 535px; display: block; margin: 0 auto; float: none; position: relative; }
+
+.page-id-5 main#content div section#slide { background: url('https://www.avanz.com.co/wp-content/uploads/2020/10/avanz-bg-home.jpg') no-repeat bottom center #1a2741; background-size: cover; height: 675px; }
+
+.page-id-20 div section#slide { background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/servicios.jpg') no-repeat top center fixed; background-size: cover; }
+.page-id-218 div section#slide { background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/servicios.jpg') no-repeat top center fixed; background-size: cover; }
+.page-id-12 div section#slide { background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/servicios.jpg') no-repeat top center fixed; background-size: cover; }
+
+main#content div section#slide article { width: 950px; height: 515px; margin: 0 auto; float: none; position: relative; padding: 27px 0 0 0; }
+
+main#content div section#slide article div#avanz { width: 450px; height: 300px; display: block; margin: 115px 0 0 0; float: left; position: relative; overflow: hidden; }
+
+.page-id-20 main#content div section#slide { height: 415px; }
+.page-id-20 main#content div section#slide article { height: 300px; }
+.page-id-20 main#content div section#slide article div#avanz { margin: 105px 0 0 0; }
+
+.page-id-218 main#content div section#slide { height: 275px; }
+.page-id-218 main#content div section#slide article { height: 275px; }
+.page-id-218 main#content div section#slide article div#avanz { margin: 35px 0 0 0; width: 405px; height: auto; }
+
+.page-id-5 main#content div section#slide article div#avanz { height: 255px; margin: 175px 0 0 0; }
+
+.page-id-12 main#content div section#slide article div#avanz { height: 325px; margin: 85px 0 0 0; width: 495px; }
+.page-id-12 main#content div section#slide article div#avanz h2.trabaja { line-height: 0.9em; }
+
+main#content div section#slide article div#avanz h2 { font-size: 3.37em; line-height: 0.85em; letter-spacing: 0.035em; text-align: left; margin: 0; color: #fff; font-weight: 400; padding: 0; }
+main#content div section#slide article div#avanz h2 strong { color: #C19E57; font-weight: 700; }
+main#content div section#slide article div#avanz p { width: 100%; font-size: 1.25em; line-height: 1.25em; letter-spacing: 0.055em; text-align: left; margin: 0; color: #fff; font-weight: 300; padding: 30px 0; }
+
+main#content div section#slide article div#avanz a { width: 220px; height: 30px; display: block; margin: 0 auto; float: left; position: relative; transition: all 0.3s ease-in; }
+main#content div section#slide article div#avanz a i { width: 30px; height: 30px; display: block; margin: 0; float: left; padding: 0; font-size: 0; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/ico-right.svg') no-repeat top center; background-size: cover; transition: all 0.3s ease-in; }
+main#content div section#slide article div#avanz a span { width: 180px; height: 30px; display: block; float: right; font-size: 1em; line-height: 1em; letter-spacing: 0.055em; text-align: center; margin: 0 0 0 5px; color: #1a2741; font-weight: 600; text-transform: uppercase; padding: 8px 10px; background: #C19E57; border-radius: 15px; transition: all 0.3s ease-in; }
+
+main#content div section#slide article div#avanz a:hover { width: 225px; transition: all 0.15s ease-out; }
+main#content div section#slide article div#avanz a:hover i { color: #fff; filter: brightness(5); transition: all 0.15s ease-out; }
+main#content div section#slide article div#avanz a:hover span { background: #fff; transition: all 0.15s ease-out; }
+
+main#content div section#slide article figure { width: 450px; height: 450px; display: none; margin: 123px auto 0; float: right; position: relative; background: url(https://www.avanz.com.co/wp-content/uploads/2020/08/slide-img.jpg) no-repeat top center; background-size: cover; filter: blur(10px); }
+
+.nuestro-consultor .mdrt { color: #C19E57 !important; transition: all 0.3s ease-in !important; }
+
+div#n2-ss-3 .n2-font-3d83ff134ba7b4388a80945d25648b43-paragraph { line-height: 0.95em !important; }
+
+div#n2-ss-3 .n2-font-8b5f82b40945b4ea343c287baa2644bf-paragraph a { color: #C19E57 !important; transition: all 0.3s ease-in !important; }
+div#n2-ss-3 .n2-font-8b5f82b40945b4ea343c287baa2644bf-paragraph a:hover { color: #1a2741 !important; transition: all 0.15 ease-out !important; }
+
+
+
+/* Beneficios > SERVICIOS */
+main#content section#slide-beneficios { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: url('https://www.avanz.com.co/wp-content/uploads/2020/08/img-inicio-e1599582107340.jpg') no-repeat top center fixed; background-size: cover; }
+main#content section#slide-beneficios article { width: 1000px; height: 635px; display: block; margin: 0 auto; float: none; position: relative; padding: 137px 0; }
+main#content section#slide-beneficios article div.slick-beneficios { width: 1000px; height: 360px; display: block; margin: 0 auto; float: none; position: relative; padding: 0; }
+main#content section#slide-beneficios article div.slick-beneficios div.box-beneficios { width: 1000px; height: 360px; display: block; margin: 0; float: left; position: relative; padding: 0; }
+main#content section#slide-beneficios article div.slick-beneficios div.box-beneficios img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+
+main#content section#slide-beneficios article div.slick-beneficios div.box-beneficios a.to-consultorias { width: 95px; height: auto; display: block; position: absolute; bottom: 35px; left: 60px; font-size: 1.05em; line-height: 0.9em; letter-spacing: 0; text-align: center; margin: 0; background: #fff; border-radius: 25px; color: #1a2741; font-weight: 600; padding: 9.5px 0 10.5px; transition: all 0.3s ease-in; }
+main#content section#slide-beneficios article div.slick-beneficios div.box-beneficios a.to-consultorias:hover { width: 105px; background: #1a2741; color: #fff; transition: all 0.15s ease-out; }
+
+.slick-next, .slick-prev { width: 35px !important; height: 35px !important; }
+.slick-prev { left: -65px !important; background: url('https://www.avanz.com.co/wp-content/uploads/2020/10/izquierda.svg') no-repeat top center !important; background-size: cover !important; }
+.slick-next { right: -65px !important; background: url('https://www.avanz.com.co/wp-content/uploads/2020/10/derecha.svg') no-repeat top center !important; background-size: cover !important; }
+.slick-next:before, .slick-prev:before { display: none !important; }
+
+
+
+/*segundo-section*/
+main#content div section#segundo { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #fff; }
+main#content div section#segundo article { width: 900px; height: 548px; margin: 0 auto; float: none; position: relative; padding: 100px 0; }
+main#content div section#segundo article div#fondo { width: 362px; height: 348px; display: block; margin: 0; padding: 0; float: left; position: relative; background: #1a2741; }
+main#content div section#segundo article div#titulo { width: 465px; height: 194px; display: block; margin: 0; padding: 0; float: left; position: absolute; top: 155px; left: 55px; z-index: 1; }
+
+main#content div section#segundo article div#titulo h4 { width: 240px; height: auto; display: block; font-size: 1.4em; line-height: 1.3em; letter-spacing: 0; text-align: center; margin: 0; color: #C19E57; font-style: italic; font-weight: 300; padding: 0 0 0 55px; }
+main#content div section#segundo article div#titulo h5 { font-size: 3.4em; line-height: 0.95em; text-align: left; margin: 10px 0 0 0; color: #fff; font-weight: 400; padding: 0; letter-spacing: 0.015em; }
+main#content div section#segundo article div#titulo h5 strong { color: #C19E57; }
+
+main#content div section#segundo article div#foto-texto { width: 538px; height: 348px; display: block; margin: 0; float: right; position: relative; }
+main#content div section#segundo article div#foto-texto figure { width: 100%; height: 270px; display: block; margin:0 auto; float:none; position: relative; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/somos.jpg') no-repeat top center; background-size: cover; }
+main#content div section#segundo article div#foto-texto p { width: 345px; font-size: 1.1em; line-height: 1.2em; letter-spacing: 0; text-align: center; margin: 20px auto 0; color: #1a2741; font-weight: 600; padding: 0; }
+
+
+
+/*tercer-section*/
+main#content div section#tercero { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #fff; }
+main#content div section#tercero article { width: 900px; height: 375px; display: block; margin: 0 auto; padding: 75px 0 0 0; float: none; position: relative; }
+main#content div section#tercero article div { width: 300px; height: 300px; display: block; margin: 0; float: left; position: relative; }
+main#content div section#tercero article div h4 { font-size: 1.9em; line-height: 1em; letter-spacing: 0; text-align: left; margin: 0 5px 10px 0; color: #C19E57; font-weight: 600; padding: 0; float: left; }
+main#content div section#tercero article div h5 { font-size: 1.9em; line-height: 1em; letter-spacing: 0; text-align: left; margin: 0 auto; color: #1a2741; font-weight: 600; padding: 0; float: left; }
+main#content div section#tercero article div figure { width: 300px; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#tercero article div figure img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#tercero article div p { width: 230px; font-size: 1.0em; line-height: 1.15em; letter-spacing: -0.015em; text-align: justify; margin: 17px 35px; color: #1a2741; font-weight: 500 !important; padding: 0; float: none; }
+
+main#content div section#tercero nav { width: 410px; height: 35px; margin: 45px auto 90px; padding: 0; position: relative; float: none; display: block; }
+main#content div section#tercero nav a { width: 100%; height: auto; display: block; position: relative; font-size: 1.15em; line-height: 0.9em; letter-spacing: 0; text-align: center; margin: 0 auto; background: #C19E57; border-radius: 25px; color: #1a2741; font-weight: 600; padding: 9.5px 0 10px; text-transform: uppercase; transition: all 0.3s ease-in; }
+main#content div section#tercero nav a:hover { background: #1a2741; color: #fff; transition: all 0.15s ease-out; }
+
+
+
+/* Cuarto Section */
+main#content div section#cuarto { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: url('https://www.avanz.com.co/wp-content/uploads/2020/08/img-manos.jpg') no-repeat top center; background-size: cover; }
+main#content div section#cuarto article#vision { width: 735px; height: auto; margin: 0 auto; float: none; padding: 100px 0; position: relative; }
+main#content div section#cuarto article#vision h5 { font-size: 2.75em; line-height: 1em; letter-spacing: 0; text-align: center; margin: 0 auto; color: #fff; font-weight: 600; padding: 0; float: none; }
+main#content div section#cuarto article#vision h6 { font-size: 2.75em; line-height: 1em; letter-spacing: 0.025em; text-align: center; margin: 0 auto; color: #fff; font-weight: 600; padding: 0; float: none; }
+main#content div section#cuarto article#vision p { width: 495px; font-size: 1.25em; line-height: 1.3em; letter-spacing: 0.035em; text-align: center; margin: 0 auto; color: #fff; font-weight: 400; padding: 25px 0 0 0; float: none; }
+main#content div section#cuarto article#vision a { width: 285px; height: auto; display: block; position: relative; font-size: 1.15em; line-height: 0.9em; letter-spacing: 0; text-align: center; margin: 35px auto 0 auto; background: #C19E57; border-radius: 25px; color: #1a2741; font-weight: 600; padding: 13.5px 0 14.5px; transition: all 0.3s ease-in; }
+main#content div section#cuarto article#vision a:hover { width: 295px; background: #fff; color: #1a2741; transition: all 0.15s ease-out; }
+
+
+
+/* Testimonios */
+main#content section#row-testimonios { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #f9f9f9; }
+main#content section#row-testimonios h5 { font-size: 2.75em; text-align: center; letter-spacing: -0.015em; line-height: 1em; font-weight: 800; color: #1a2741; margin: 0; padding: 90px 20px 15px; }
+main#content section#row-testimonios article { width: 1200px; height: 450px; display: block; margin: 0 auto; float: none; position: relative; overflow: hidden; }
+main#content section#row-testimonios article figure { width: 600px; height: 320px; display: block; margin: 30px 0 90px 0; float: left; position: relative; }
+main#content section#row-testimonios article figure img { width: 150px; height: 150px; display: block; margin: 0; float: none; position: absolute; top: 85px; left: 0; z-index: 2; border-radius: 50%; }
+main#content section#row-testimonios article figure div.cont-blanco { width: 465px; height: 320px; display: block; margin: 0 60px 0 0; float: none; position: absolute; top: 0; right: 0; z-index: 1; background: #fff; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+main#content section#row-testimonios article figure div.cont-blanco h6 { font-size: 1.65em; text-align: left; letter-spacing: -0.015em; line-height: 1.45em; font-weight: 500; padding: 0; margin: 0 auto; color: #C19E57; width: 343px; height: auto; display: block; float: none; position: absolute; bottom: 43px; left: 53px; z-index: 4; }
+main#content section#row-testimonios article figure div.cont-blanco p { font-size: 1.15em; text-align: left; letter-spacing: -0.015em; line-height: 1.45em; font-weight: 600; padding: 0; margin: 0 auto; display: block; color: #1a2741; width: 360px; height: auto; display: block; float: none; position: absolute; top: 80px; left: 53px; z-index: 3; }
+main#content section#row-testimonios article figure div.cont-blanco div.comillas { width: 104px; height: 86px; display: block; margin: 0; float: none; position: absolute; bottom: 35px; right: 35px; background: url('https://www.avanz.com.co/wp-content/uploads/2020/10/testimonios-comillas.svg') no-repeat top center; background-size: cover; }
+main#content section#row-testimonios article figure div.cont-blanco div.puntos-verdes { width: 80px; height: 20px; display: block; margin: 0; float: none; position: absolute; top: 25px; left: 25px; background: url(https://www.avanz.com.co/wp-content/uploads/2020/10/testimonios-puntos.svg) no-repeat top center; background-size: cover; }
+
+
+
+/* Contáctenos */
+main#content div section#contactenos { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #1a2741; outline: none !important; }
+main#content div section#contactenos article { width: 950px; height: 400px; display: block; margin: 0 auto; float: none; position: relative; padding: 90px 0; border-bottom: solid 2px #C19E57; }
+
+main#content div section#contactenos article div#contacto { width: 265px; height: 214px; display: block; margin: 0 185px 0 0; float: left; position: relative; }
+main#content div section#contactenos article div#contacto h6 { width: 100%; height: auto; display: block; margin: 0 auto 15px; float: none; position: relative; font-size: 1.55em; line-height: 1.25em; letter-spacing: 0; text-align: left; color: #fff; font-weight: 400; padding: 0; }
+
+main#content div section#contactenos article div#contacto a { width: 100%; height: 23px; display: block; margin: 0 auto 7px; float: none; position: relative; transition: all 0.3s ease-in; }
+main#content div section#contactenos article div#contacto a:nth-child(4) { margin: 0 auto; }
+
+main#content div section#contactenos article div#contacto a i { font-size: 1.35em; color: #C19E57; text-align: center; width: 23px; height: 23px; display: block; float: left; position: relative; margin: 0 10px 0 0; padding: 1px 0; transition: all 0.3s ease-in; }
+main#content div section#contactenos article div#contacto a span { font-size: 1.35em; letter-spacing: 0.020em; color: #C19E57; line-height: 1em; font-weight: 500; width: 230px; height: 23px; display: block; float: left; position: relative; margin: 0; transition: all 0.3s ease-in; }
+
+main#content div section#contactenos article div#contacto a:hover i { margin: 0 15px 0 0; transition: all 0.15s ease-out; }
+main#content div section#contactenos article div#contacto a:hover span { color: #fff; width: 225px; transition: all 0.15s ease-out; }
+main#content div section#contactenos article div#contacto a#boton-work-us { background:#C19E57; color: #1a2741; font-size: 1.15em; letter-spacing: 0.010em; line-height: 1em;text-align: center; font-weight: 600; text-transform: uppercase; width: 255px; height: 38px; border-radius: 25px; display: block; float: left; position: relative; margin: 15px auto 0; padding: 11px 0 0 0; transition: all 0.3s ease-in; }
+main#content div section#contactenos article div#contacto a#boton-work-us:hover { width: 265px; background: #fff; transition: all 0.15s ease-out; }
+
+main#content div section#contactenos article div#formulario { width: 500px; height: 230px; display: block; margin: 0; float: left; position: relative; }
+main#content div section#contactenos article div#formulario h3 { display: none !important; }
+
+main#content div section#contactenos a#lugar { width: 900px; height: 28px; display: block; margin: 0 auto; font-size: 1.2em; letter-spacing: 0.020em; color:#C19E57; text-align: left; line-height: 1.7em; font-weight: 500; }
+
+
+
+main#content div section#contactenos article div#formulario .nf-form-content .list-select-wrap .nf-field-element>div,
+main#content div section#contactenos article div#formulario .nf-form-content input:not([type=button]),
+main#content div section#contactenos article div#formulario .nf-form-content textarea { background: #f7f7f7; border: 1px solid #c4c4c4; box-shadow: none; color: #787878; padding: 10px 15px 13px 15px; line-height: 1em; height: auto; border-radius: 25px !important; transition: all 0.3s ease-in; }
+
+main#content div section#contactanos article div#formulario .nf-form-content textarea { height: 150px !important; }
+
+main#content div section#contactenos article div#formulario .nf-form-content .list-select-wrap .nf-field-element>div:focus,
+main#content div section#contactenos article div#formulario .nf-form-content input:not([type=button]):focus,
+main#content div section#contactenos article div#formulario .nf-form-content textarea:focus { background: #C19E57; border: 1px solid #C19E57; color: #1a2741; transition: all 0.15s ease-out; }
+
+main#content div section#contactenos article div#formulario .nf-error.field-wrap .nf-field-element:after { background: #e80000 !important; color: #fff !important; font-family: FontAwesome; font-size: 20px !important; content: "\f12a"; position: absolute !important; top: 1px !important; right: 1px !important; bottom: 1px !important; height: 42px !important; width: 42px !important; line-height: 1em !important; padding: 11px 0 !important; text-align: center !important; border-radius: 25px !important; transition: all 0.3s ease-in !important; }
+
+main#content div section#contactenos article div#formulario #nf-field-4 { width: auto !important; height: auto !important; display: block !important; font-size: 1.15em !important; line-height: 0.9em !important; letter-spacing: 0.095em !important; text-align: center !important; color: #1a2741 !important; font-weight: 600 !important; margin: 7px auto 0 auto !important; padding: 13px 25px !important; float: left !important; text-transform: uppercase !important; background: #C19E57 !important; border-radius: 25px !important; outline: none !important; transition: all 0.3s ease-in !important; }
+main#content div section#contactenos article div#formulario #nf-field-4:hover { background: #fff !important; padding: 13px 30px !important; transition: all 0.15s ease-out !important; }
+
+main#content div section#contactenos article div#formulario .nf-after-field { display: none !important; }
+main#content div section#contactenos article div#formulario #nf-field-2-container { margin-bottom: 7px !important; }
+main#content div section#contactenos article div#formulario #nf-field-9-container { margin-bottom: 7px !important; }
+main#content div section#contactenos article div#formulario #nf-field-10-container { margin-bottom: 0 !important; }
+
+
+
+/* Página Servicios */
+.page-id-10 main#content div section#slide article div#avanz h2.fys { font-size: 3.37em; line-height: 1em; letter-spacing: 0em; text-align: left; margin: 0; color:#C19E57; font-weight: 600; padding:0; }
+.page-id-10 main#content div section#slide article div#avanz p.fs { width: 465px; font-size: 1.4em; line-height: 1.3em; letter-spacing: 0.005em; text-align: left; margin: 0; color: #fff; font-weight: 400; padding: 26px 0 31px 0; }
+
+.page-id-10 main#content div section#slide article div#avanz a.to-servicios { width: 45px; height: 45px; display: block; margin: 0; float: left; padding: 0; font-size: 0; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/ico-right.svg') no-repeat top center; background-size: cover; transform: rotate(90deg); transition: all 0.3s ease-in; }
+.page-id-10 main#content div section#slide article div#avanz a.to-servicios:hover { margin: 5px 0 0 0; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/ico-right.svg') no-repeat top center; background-size: cover; transform: rotate(90deg); transition: all 0.15s ease-out; }
+
+.page-id-12 main#content div section#slide article div#avanz a#to-trabaja { width: 45px; height: 45px; display: block; margin: 0; float: left; padding: 0; font-size: 0; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/ico-right.svg') no-repeat top center; background-size: cover; transform: rotate(90deg); transition: all 0.3s ease-in; }
+.page-id-12 main#content div section#slide article div#avanz a#to-trabaja:hover { margin: 5px 0 0 0; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/ico-right.svg') no-repeat top center; background-size: cover; transform: rotate(90deg); transition: all 0.15s ease-out; }
+
+
+
+/* Blog */
+main#content div section#row-blog { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#row-blog article { width: 715px; height: auto; display: block; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+main#content div section#row-blog article ul.lcp_catlist { width: 100%; height: auto; display: block; margin: 0 auto; float: none; padding: 0; }
+main#content div section#row-blog article ul.lcp_catlist li { width: 100%; height: auto; display: block; margin: 0 auto 75px; float: none; position: relative; border-left: solid 7px #C19E57; padding: 0 0 0 15px; }
+main#content div section#row-blog article ul.lcp_catlist li:last-child { margin: 0 auto; }
+
+main#content div section#row-blog article ul.lcp_catlist li a:nth-child(1) { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; font-size: 3.75em; line-height: 1em; color: #1a2741; text-align: left; font-weight: 700; letter-spacing: -0.035em; padding: 0; background: #fff; transition: all 0.3s ease-in; }
+main#content div section#row-blog article ul.lcp_catlist li a:nth-child(2) { width: 250px; height: 250px; display: none; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; overflow: hidden; transition: all 0.3s ease-in; }
+main#content div section#row-blog article ul.lcp_catlist li a:nth-child(2) img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; transition: all 0.3s ease-in; }
+
+main#content div section#row-blog article ul.lcp_catlist li:hover { border-left: solid 7px #1a2741; transition: all 0.15s ease-out; }
+main#content div section#row-blog article ul.lcp_catlist li:hover a:nth-child(1) { color: #C19E57; transition: all 0.15s ease-out; }
+main#content div section#row-blog article ul.lcp_catlist li:hover a:nth-child(2) img { transform: scale(1.02); transition: all 0.15s ease-out; }
+
+.single-post main#main { width: 950px; height: auto; display: block; margin: 0 auto; float: none; position: relative; padding: 55px 0 90px; }
+.single-post main#main article { width: 100%; height: auto; display: block; margin: 0 auto; padding: 0; float: none; position: relative; }
+.single-post main#main article header.entry-header { width: 100%; height: auto; display: block; margin: 0 auto 55px; padding: 0; float: none; position: relative; }
+
+.single-post main#main article header.entry-header h1.entry-title { display: block !important; font-size: 4.35em; line-height: 0.85em; letter-spacing: -0.025em; text-align: left; margin: 0 0 25px; color: #1a2741; font-weight: 600; padding: 0 175px 0 15px; border-left: solid 7px #C19E57; }
+
+.single-post main#main article header.entry-header div.entry-meta { width: 100%; height: auto; display: none; margin: 0 auto; padding: 0; float: none; position: relative; }
+.single-post main#main article header.entry-header div.entry-meta span.posted-on,
+.single-post main#main article header.entry-header div.entry-meta span.byline { display: none !important; }
+
+.single-post main#main article header.entry-header div.entry-meta span.cat-links { width: 100%; height: auto; display: block; margin: 0 auto; padding: 0; float: none; position: relative; }
+.single-post main#main article header.entry-header div.entry-meta span.cat-links a { font-size: 1.05em; line-height: 1em; text-align: left; margin: 0 0 13px 0; background: #1a2741; color: #fff; font-weight: 400; float: left; padding: 10px 20px 12px; border-radius: 25px; letter-spacing: 0.085em; transition: all 0.3s ease-in; }
+.single-post main#main article header.entry-header div.entry-meta span.cat-links a:hover { background: #C19E57; color: #1a2741; transition: all 0.15s ease-out; }
+
+.single-post main#main article div.single-thumb { width: 100%; height: auto; display: none; margin: 0 auto 35px; padding: 0; float: none; position: relative; }
+
+.single-post main#main article div.entry-content { width: 100%; height: auto; display: block; margin: 0 auto; padding: 0; float: none; position: relative; }
+.single-post main#main article div.entry-content p { font-size: 1.2em; line-height: 1.45em; letter-spacing: 0em; text-align: justify; margin: 0 auto 25px; color: #1a2741; font-weight: 400; padding: 0; float: none; }
+.single-post main#main article div.entry-content p strong { font-weight: 600; }
+.single-post main#main article div.entry-content h3 { font-size: 2.15em; line-height: 1.05em; letter-spacing: 0.015em; text-align: right; margin: 45px 0; color: #C19E57; font-weight: 600; padding: 0 0 0 295px; }
+.single-post main#main article div.entry-content h5 { display: block !important; font-size: 2.35em; line-height: 0.85em; letter-spacing: -0.025em; text-align: left; margin: 75px 0 25px 0; color: #1a2741; font-weight: 600; padding: 0 175px 0 0; border-left: none; }
+
+.single-post main#main article div.entry-content ul { width: 90%; height: auto; display: block; margin: 0 0 25px; float: none; position: relative; padding: 0; }
+.single-post main#main article div.entry-content ul li { width: 100%; height: auto; display: block; margin: 0 auto 10px; float: none; position: relative; color: #1a2741; font-weight: 500; font-size: 1.2em; line-height: 1.35em; }
+
+.single-post main#main article div.entry-content div#autor { width: 100%; height: auto; display: block; margin: 55px auto 0 auto; padding: 0; float: none; position: relative; }
+.single-post main#main article div.entry-content div#autor img { width: 150px; height: auto; display: block; margin: 0 0 15px; float: none; border-radius: 50%; }
+.single-post main#main article div.entry-content div#autor h6 { font-size: 1.75em; line-height: 1em; letter-spacing: -0.035em; text-align: left; margin: 0; color: #1a2741; font-weight: 600; padding: 0 0 5px; }
+.single-post main#main article div.entry-content div#autor p { font-size: 1.35em; line-height: 1em; letter-spacing: 0.015em; text-align: left; margin: 0; color: #1a2741; font-weight: 400; padding: 0; }
+.single-post main#main article div.entry-content div#autor p a { color: #C19E57; padding: 15px 0 0 0; font-weight: 600; transition: all 0.3s ease-in; }
+.single-post main#main article div.entry-content div#autor p a:hover { color: #1a2741; transition: all 0.15s ease-out; }
+
+.single-post main#main div#comments { display: none !important; }
+.post-navigation { display: none !important; }
+
+
+
+/* Test */
+main#content div section#row-test { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#row-test article { width: 950px; height: 335px; display: block; margin: 0 auto; float: none; position: relative; overflow: hidden; padding: 75px 0; }
+main#content div section#row-test article div#box-test { width: 100%; height: 335px; display: block; margin: 0 auto; float: none; position: absolute; top: -10px; left: 0; z-index: 10; }
+
+main#content div section#row-test article div#box-test figure { width: 950px; height: 335px; display: block; margin: 0; float: left; position: absolute; top: 0; left: 0; background: #fff; }
+main#content div section#row-test article div#box-test figure#pregunta-01 { z-index: 7; }
+main#content div section#row-test article div#box-test figure#pregunta-02 { z-index: 6; }
+main#content div section#row-test article div#box-test figure#pregunta-03 { z-index: 5; }
+main#content div section#row-test article div#box-test figure#pregunta-04 { z-index: 4; }
+main#content div section#row-test article div#box-test figure#pregunta-05 { z-index: 3; }
+main#content div section#row-test article div#box-test figure#pregunta-06 { z-index: 2; }
+main#content div section#row-test article div#box-test figure#pregunta-07 { z-index: 1; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; padding: 70px 0 55px; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta h5 { font-size: 2.75em; line-height: 1em; letter-spacing: -0.035em; text-align: left; margin: 0 0 8px 0; color: #1a2741; font-weight: 600; padding: 0; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados p { font-size: 3.75em; line-height: 1em; letter-spacing: -0.035em; text-align: center; margin: 35px 0 15px; color: #c58c3e; font-weight: 600; padding: 0; display: block; float: none; }
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados p#resultado-01 { display: none; }
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados p#resultado-02 { display: none; }
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados p#resultado-03 { display: none; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados a.to-valoracion { width: 430px; height: 40px; display: none; font-size: 1.24em; line-height: 1em; letter-spacing: 0; text-align: center; margin: 0 auto; color: #fff; font-weight: 400; float: none; padding: 10px 0 0 0; background: #1a2741; border-radius: 25px; transition: all 0.3s ease-in; }
+main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados a.to-valoracion:hover { background: #C19E57; color: #1a2741; transition: all 0.15s ease-out; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta nav { width: 250px; height: 75px; display: block; margin: 35px 0 0 0; float: right; position: relative; }
+main#content div section#row-test article div#box-test figure div.box-pregunta nav a { width: 125px; height: 75px; display: block; margin: 0; float: left; position: relative; font-size: 2.35em; line-height: 1em; font-weight: 600; text-align: center; padding: 20px 0; transition: all 0.3s ease-in; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta nav a.test-sin-elegir { color: #fff; background: #1a2741; transition: all 0.3s ease-in; }
+main#content div section#row-test article div#box-test figure div.box-pregunta nav a.test-elegido { color: #fff; background: #C19E57; transition: all 0.3s ease-in; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta nav a:nth-child(1) { border-right: solid 2px #fff; border-radius: 5px 0 0 5px; }
+main#content div section#row-test article div#box-test figure div.box-pregunta nav a:nth-child(2) { border-radius: 0 5px 5px 0; }
+
+main#content div section#row-test article div#box-test figure div.box-pregunta nav a:hover { background:#C19E57; transition: all 0.15s ease-out; }
+
+
+
+/* Consultorías */
+main#content div section#consultorias { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#consultorias article { width: 900px; height: 525px; display: block; margin: 0 auto 75px; padding: 100px 0 0 0; float: none; position: relative; }
+main#content div section#consultorias article div.barra-color { width: 100px; height: 421px; display: block; margin: 0 auto; padding: 0; float: left; position: relative; background: #1a2741; }
+main#content div section#consultorias article figure { width: 404px; height: 270px; display: block; margin:0 auto; float:none; position: absolute; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/consultorias.jpg') no-repeat top center; background-size: cover; z-index: 1; top: 175px; left: -25px; }
+
+main#content div section#consultorias article div#info { width: 425px; height: 225px; display: block; margin: 60px 0 0 0; padding: 0; float: right; position: relative; }
+main#content div section#consultorias article div#info h5 { font-size: 1.65em; line-height: 1em; letter-spacing: 0.015em; text-align: left; margin: 0; color: #1a2741; font-weight: 500; padding: 0; }
+main#content div section#consultorias article div#info h4 { font-size: 3.55em; line-height: 0.85em; letter-spacing: -0.015em; text-align: left; margin: 0 0 35px 0; color: #C19E57; font-weight: 600; padding: 0; text-transform: uppercase; }
+
+main#content div section#consultorias article div#info nav.pop-up-consultoria { width: 295px; height: 136px; display: block; margin: 0; padding: 0; float: none; position: relative; }
+main#content div section#consultorias article div#info nav.pop-up-consultoria a { font-size: 1.5em; line-height: 1em; letter-spacing: 0em; text-align: left; margin: 0 0 13px 0; color: #1a2741; font-weight: 500; padding: 0; float: left; padding: 0; transition: all 0.3s ease-in; }
+main#content div section#consultorias article div#info nav.pop-up-consultoria a:hover { color:#C19E57; transition: all 0.15s ease-out; }
+
+main#content div section#consultorias article div#info a.to-valoracion { width: 425px; height: 40px; font-size: 1.05em; line-height: 1em; letter-spacing: 0.055em; text-align: center; margin: 15px auto 0; color: #ffffff; font-weight: 500; float: left; padding: 12px 0; background: #1a2741; border-radius: 25px; transition: all 0.3s ease-in; } 
+main#content div section#consultorias article div#info a.to-valoracion:hover { background:#C19E57;color: #1a2741; transition: all 0.15s ease-out; }
+
+main#content div section#consultorias article div#info a#agendamiento { width: 272px; height: 40px; font-size: 1.24em; line-height: 1em; letter-spacing: 0em; text-align: center; margin:15px auto 0; color: #ffffff; font-weight: 400; float:left; padding: 10px 0 0 0; background: #1a2741;border-radius: 25px; transition: all 0.3s ease-in; }
+main#content div section#consultorias article div#info a#agendamiento:hover {background:#C19E57;color: #1a2741; transition: all 0.15s ease-out;}
+
+a.a-desktop { display: block; }
+a.a-mobile { display: none; }
+
+
+
+/*Cursos y Talleres*/
+main#content div section#cursosytalleres { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#cursosytalleres article { width: 900px; height: 430px; display: block; margin: 0 auto 75px; padding: 0; float: none; position: relative; }
+
+main#content div section#cursosytalleres article div#info-cursos { width: 514px; height: 286px; display: block; margin: 47px 0 0 0; padding: 0; float: left; position: relative; }
+main#content div section#cursosytalleres article div#info-cursos h5 { font-size: 1.65em; line-height: 1em; letter-spacing: 0.015em; text-align: left; margin: 0; color: #1a2741; font-weight: 500; padding: 0; }
+main#content div section#cursosytalleres article div#info-cursos h4 { font-size: 3.55em; line-height: 0.85em; letter-spacing: -0.015em; text-align: left; margin: 0 0 35px 0; color: #C19E57; font-weight: 600; padding: 0; text-transform: uppercase; }
+nav.pop-up-cursos { width: 265px; height: 78px; display: block; margin: 0; padding: 0; float: none; position: relative; }
+main#content div section#cursosytalleres article div#info-cursos nav.pop-up-cursos a { font-size: 1.5em; line-height: 1em; letter-spacing: 0em; text-align: left; margin: 0 0 18px 0; color: #1a2741; font-weight: 500; padding: 0; float: left; padding: 0; transition: all 0.3s ease-in; }
+main#content div section#cursosytalleres article div#info-cursos nav.pop-up-cursos a:hover { color: #C19E57; transition: all 0.15s ease-out; }
+
+main#content div section#cursosytalleres article div#info-cursos a.to-valoracion { width: 425px; height: 40px; font-size: 1.05em; line-height: 1em; letter-spacing: 0.055em; text-align: center; margin: 15px auto 0; color: #ffffff; font-weight: 500; float: left; padding: 12px 0; background: #1a2741; border-radius: 25px; transition: all 0.3s ease-in; } 
+main#content div section#cursosytalleres article div#info-cursos a.to-valoracion:hover { background:#C19E57; color: #1a2741; transition: all 0.15s ease-out; }
+
+main#content div section#cursosytalleres article div#info-cursos a#agendamiento {width: 272px; height: 40px; font-size: 1.24em; line-height: 1em; letter-spacing: 0em; text-align: center; margin:15px auto 0; color: #ffffff; font-weight: 400; float:left; padding: 10px 0 0 0; background: #1a2741;border-radius: 25px; transition: all 0.3s ease-in; }
+main#content div section#cursosytalleres article div#info-cursos a#agendamiento:hover {background:#C19E57;color: #1a2741; transition: all 0.15s ease-out;}
+
+main#content div section#cursosytalleres article div.barra-color-2 { width: 100px; height: 421px; display: block; margin: 0 auto; padding: 0; float: right; position: relative; background: #C19E57; }
+main#content div section#cursosytalleres article figure { width: 404px; height: 270px; display: block; margin:0 auto; float:none; position: absolute; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/cursosytalleres.jpg') no-repeat top center; background-size: cover; z-index: 1; top: 75px; right: -25px; }
+
+
+
+/* Charlas */
+main#content div section#charlas { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#charlas article { width: 900px; height: 430px; display: block; margin: 0 auto 75px; padding: 0; float: none; position: relative; }
+main#content div section#charlas article div.barra-color { width: 100px; height: 421px; display: block; margin: 0 auto; padding: 0; float: left; position: relative; background: #1a2741; }
+main#content div section#charlas article figure { width: 404px; height: 270px; display: block; margin: 0 auto; float:none; position: absolute; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/consultorias.jpg') no-repeat top center; background-size: cover; z-index: 1; top: 75px; left: -25px; }
+main#content div section#charlas article div#info-charlas { width: 425px; height: 286px; display: block; margin: 24px 0 0 0; padding: 0; float: right; position: relative; }
+main#content div section#charlas article div#info-charlas h5 { font-size: 1.65em; line-height: 1em; letter-spacing: 0.015em; text-align: left; margin: 0; color: #1a2741; font-weight: 500; padding: 0; }
+main#content div section#charlas article div#info-charlas h4 { font-size: 3.55em; line-height: 0.85em; letter-spacing: -0.015em; text-align: left; margin: 0 0 35px 0; color: #C19E57; font-weight: 600; padding: 0; text-transform: uppercase; }
+main#content div section#charlas article div#info-charlas p { font-size: 1.1em; line-height: 1.2em; letter-spacing: 0em; text-align: justify; margin: 0 0 13px 0; color: #1a2741; font-weight: 500; padding: 0; }
+
+main#content div section#charlas article div#info-charlas a.to-valoracion { width: 425px; height: 40px; font-size: 1.05em; line-height: 1em; letter-spacing: 0.055em; text-align: center; margin: 15px auto 0; color: #ffffff; font-weight: 500; float: left; padding: 12px 0; background: #1a2741; border-radius: 25px; transition: all 0.3s ease-in; } 
+main#content div section#charlas article div#info-charlas a.to-valoracion:hover { background:#C19E57;color: #1a2741; transition: all 0.15s ease-out;}
+
+main#content div section#charlas article div#info-charlas a#agendamiento {width: 272px; height: 40px; font-size: 1.24em; line-height: 1em; letter-spacing: 0em; text-align: center; margin:15px auto 0; color: #ffffff; font-weight: 400; float:left; padding: 10px 0 0 0; background: #1a2741;border-radius: 25px; transition: all 0.3s ease-in; }
+main#content div section#charlas article div#info-charlas a#agendamiento:hover {background:#C19E57;color: #1a2741; transition: all 0.15s ease-out;}
+
+
+
+/* Servicios financieros no bancarios */	
+main#content div section#servicios { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#servicios article { width: 900px; height: 530px; display: block; margin: 0 auto; padding: 0 0 100px; float: none; position: relative; }
+main#content div section#servicios article div#info-servicios { width: 514px; height: 349px; display: block; margin: 0 auto; padding: 0; float: left; position: relative; }
+
+main#content div section#servicios article div#info-servicios h4 { font-size: 3.55em; line-height: 0.85em; letter-spacing: -0.015em; text-align: left; margin: 0 0 24px 0; color: #C19E57; font-weight: 600; padding: 0; text-transform: uppercase; }
+main#content div section#servicios article div#info-servicios h4 strong.serv { font-size: 0.35em; font-weight: 600; }
+main#content div section#servicios article div#info-servicios p { width: 410px; font-size: 1.1em; line-height: 1.2em; letter-spacing: 0em; text-align: justify; margin: 0 0 13px 0; color: #1a2741; font-weight: 500; padding: 0; }
+main#content div section#servicios article div#info-servicios h6 { width: 410px; font-size: 1.1em; line-height: 1.2em; letter-spacing: 0em; text-align: justify; margin: 0 0 9.5px 0; color: #1a2741; font-weight: 600; padding: 0; }
+
+main#content div section#servicios article div#info-servicios a.to-valoracion { width: 425px; height: 40px; font-size: 1.05em; line-height: 1em; letter-spacing: 0.055em; text-align: center; margin: 15px auto 0; color: #ffffff; font-weight: 500; float: left; padding: 12px 0; background: #1a2741; border-radius: 25px; transition: all 0.3s ease-in; } 
+main#content div section#servicios article div#info-servicios a.to-valoracion:hover { background:#C19E57;color: #1a2741; transition: all 0.15s ease-out;}
+
+main#content div section#servicios article div#info-servicios a#agendamiento {width: 272px; height: 40px; font-size: 1.24em; line-height: 1em; letter-spacing: 0em; text-align: center; margin:15px auto 0; color: #ffffff; font-weight: 400; float:left; padding: 10px 0 0 0; background: #1a2741;border-radius: 25px; transition: all 0.3s ease-in; }
+main#content div section#servicios article div#info-servicios a#agendamiento:hover {background:#C19E57;color: #1a2741; transition: all 0.15s ease-out;}
+
+main#content div section#servicios article div.barra-color-2 { width: 100px; height: 421px; display: block; margin: 0 auto; padding: 0; float: right; position: relative; background: #C19E57; }
+main#content div section#servicios article figure { width: 404px; height: 270px; display: block; margin:0 auto; float:none; position: absolute; background: url('https://www.avanz.com.co/wp-content/uploads/2020/09/serviciosfinancieros-e1599677771815.jpg') no-repeat top center; background-size: cover; z-index: 1; top: 75px; right: -23px; }
+
+
+
+man#content div section#row-blog { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+man#content div section#row-blog article { width: 950px; height: auto; min-height: 650px; display: block; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+
+
+
+/* Página Trabaja con Nosotros */
+main#content div section#slide article div#avanz h2.trabaja { width: 100%; font-size: 3.35em; line-height: 0.85em; letter-spacing: 0.035em; text-align: left; margin: 0; color: #fff; font-weight: 400; padding: 0; }
+main#content div section#slide article div#avanz h2.trabaja strong { color: #C19E57}
+main#content div section#slide article div#avanz p.trabajo { width: 100%; font-size: 1.4em; line-height: 1.3em; letter-spacing: 0.005em; text-align: left; margin: 0; color: #fff; font-weight: 300; padding: 26px 0 31px 0; }
+main#content div section#slide article div#avanz a i.fa.fa-arrow-circle-down { font-size: 2em; color: #C19E57; float: left; padding: 1px 0 0 0; }
+
+
+
+/* Primero */
+main#content div section#trabaja-con-nosotros { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#trabaja-con-nosotros article { width: 950px; height: 595px; display: block; margin: 0 auto; float: none; position: relative; padding: 75px 0 90px; }
+main#content div section#trabaja-con-nosotros article figure { width: 250px; height: 250px; display: block; margin: 0 170px 0 0; float: left; position: relative; opacity: 0; }
+main#content div section#trabaja-con-nosotros article figure img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+
+main#content div section#trabaja-con-nosotros article div#texto { width: 530px; height: auto; display: block; margin: 15px 0; float: left; position: relative; }
+main#content div section#trabaja-con-nosotros article div#texto p { font-size: 1.35em; line-height: 1.35em; letter-spacing: 0em; text-align: justify; margin: 0 auto 25px; color: #1a2741; font-weight: 500; padding: 0; }
+
+main#content div section#trabaja-con-nosotros article div.texto { width: 425px; height: 430px; display: block; margin: 0 100px 0 0; float: left; position: relative; }
+main#content div section#trabaja-con-nosotros article div.texto:nth-child(2) { margin: 0; }
+
+main#content div section#trabaja-con-nosotros article div.texto h5 { width: 100%; font-size: 2.85em; line-height: 1.05em; letter-spacing: 0.035em; text-align: left; margin: 0; color: #1a2741; font-weight: 600; padding: 0 0 25px; }
+main#content div section#trabaja-con-nosotros article div.texto h5 strong { color: #C19E57; }
+main#content div section#trabaja-con-nosotros article div.texto p { font-size: 1.35em; line-height: 1.35em; letter-spacing: 0em; text-align: justify; margin: 0 auto 25px; color: #1a2741; font-weight: 500; padding: 0; }
+
+
+
+/* Segundo */
+main#content div section#contacto { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+main#content div section#contacto article { width: 950px; height: 395px; display: block; margin: 0 auto; float: none; position: relative; padding: 0 0 90px; }
+
+main#content div section#contacto article figure { width: 358px; height: 200px; display: block; margin: 30px 70px 0 0; float: left; position: relative; }
+main#content div section#contacto article figure div.escribenos { width: 100%; height: auto; display: block; margin: 0 auto 45px; float: none; position: relative; }
+main#content div section#contacto article figure div.escribenos:nth-child(2) { margin: 0 auto; }
+main#content div section#contacto article figure div.escribenos h5 { font-size: 2.35em; line-height: 1em; letter-spacing: -0.035em; text-align: left; margin: 0 0 15px 0; color: #1a2741; font-weight: 600; padding: 0; text-transform: uppercase; }
+main#content div section#contacto article figure div.escribenos p { font-size: 1.35em; line-height: 1.15em; letter-spacing: 0; text-align: left; margin: 0; color: #1a2741; font-weight: 500; padding: 0; }
+
+main#content div section#contacto article div#formulario { width: 522px; height: 320px; display: block; margin: 0; float: left; position: relative; }
+
+.nf-form-content label { display: none; }
+.nf-form-fields-required { display: none; }
+.nf-after-form-content { display: none !important; }
+
+.nf-form-content .label-above .nf-field-label,
+.nf-form-content .label-below .nf-field-label,
+.nf-form-content .label-hidden .nf-field-label { display: none !important; }
+
+main#content div section#contacto article div#formulario .nf-form-content .list-select-wrap .nf-field-element>div,
+main#content div section#contacto article div#formulario .nf-form-content input:not([type=button]),
+main#content div section#contacto article div#formulario .nf-form-content textarea { background: #fff; border: 1px solid #1a2741; box-shadow: none; color: #1a2741; padding: 10px 15px 13px 15px; line-height: 1em; height: auto; border-radius: 0 !important; transition: all 0.3s ease-in; }
+
+main#content div section#contacto article div#formulario .nf-form-content textarea { height: 150px !important; }
+
+main#content div section#contacto article div#formulario .nf-form-content .list-select-wrap .nf-field-element>div:focus,
+main#content div section#contacto article div#formulario .nf-form-content input:not([type=button]):focus,
+main#content div section#contacto article div#formulario .nf-form-content textarea:focus { background: #1a2741; border: 1px solid #1a2741; color: #fff; transition: all 0.15s ease-out; }
+
+main#content div section#contacto article div#formulario .nf-error.field-wrap .nf-field-element:after { background: #e80000 !important; color: #fff !important; font-family: FontAwesome; font-size: 20px !important; content: "\f12a"; position: absolute !important; top: 1px !important; right: 1px !important; bottom: 1px !important; height: 42px !important; width: 42px !important; line-height: 1em !important; padding: 11px 0 !important; text-align: center !important; border-radius: 0 !important; transition: all 0.3s ease-in !important; }
+
+main#content div section#contacto article div#formulario #nf-field-8 { width: auto !important; height: auto !important; display: block !important; font-size: 1.15em !important; line-height: 0.9em !important; letter-spacing: 0.095em !important; text-align: center !important; color: #1a2741 !important; font-weight: 600 !important; margin: 0 auto !important; padding: 13px 25px !important; float: right !important; text-transform: uppercase !important; background: #C19E57 !important; border-radius: 25px !important; outline: none !important; transition: all 0.3s ease-in !important; }
+main#content div section#contacto article div#formulario #nf-field-8:hover { padding: 13px 30px !important; transition: all 0.15s ease-out !important; }
+
+main#content div section#contacto article div#formulario .nf-after-field { display: none !important; }
+main#content div section#contacto article div#formulario #nf-field-2-container { margin-bottom: 0 !important; }
+main#content div section#contacto article div#formulario #nf-field-7-container { margin-bottom: 0 !important; }
+
+main#content div section#contacto article div#formulario .nf-field-container { margin-bottom: 5px !important; }
+
+.fancybox-bg { background: #C19E57 !important; opacity: 0.95 !important; }
+.fancybox-content { box-shadow: 0 0 15px rgba(255,255,255,0.15) !important; border-radius: 5px !important; overflow: hidden !important; }
+
+
+
+/* Aliados */
+main#content section#row-aliados { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #fff; }
+main#content section#row-aliados article { width: 960px; height: auto; display: block; margin: 0 auto 90px; float: none; position: relative; }
+main#content section#row-aliados article h6 { width: 100%; height: auto; display: block; margin: 0 auto 15px; float: none; position: relative; font-size: 2.55em; line-height: 1em; letter-spacing: -0.015em; text-align: left; color: #1a2741; font-weight: 600; padding: 0; }
+main#content section#row-aliados article img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; }
+/*
+main#content section#row-aliados article img:nth-child(5) { margin: 35px 40px 20px 110px; }
+main#content section#row-aliados article img:nth-child(6) { height: 90px; }
+main#content section#row-aliados article img:nth-child(7) { margin: 35px 40px 20px; }
+*/
+
+
+
+main#content section#slide-consultor { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #EEF5FF; }
+main#content section#slide-consultor article { width: 1100px; height: auto; display: block; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+main#content section#slide-consultor article div.slick-consultor { width: 100%; height: 454px; display: block; margin: 0 auto; float: none; position: relative; }
+main#content section#slide-consultor article div.slick-consultor img { width: 1100px; height: 454px; display: block; margin: 0; float: left; position: relative; }
+
+
+
+/* PopUp Agendamiento */
+#formu-01 { width: 500px !important; height: 525px !important; display: none; margin: 0 auto; float: none; padding: 50px; overflow: hidden !important; background: #fff; border-radius: 15px !important; border: solid 5px #C19E57 !important; }
+#formu-01 p { font-size: 1.55em; line-height: 1.1em; padding: 0 0 15px 0; display: block; font-weight: 700; color: #1a2741; letter-spacing: 0.035em; margin: 0; }
+
+#formu-01 .nf-form-content .list-select-wrap .nf-field-element>div,
+#formu-01 .nf-form-content input:not([type=button]),
+#formu-01 .nf-form-content textarea { background: #fff; border: 1px solid #1a2741; box-shadow: none; color: #787878; padding: 10px 15px 13px 15px; line-height: 1em; height: 44px; border-radius: 25px !important; transition: all 0.3s ease-in; }
+
+#formu-01 .nf-form-content textarea { height: 70px !important; }
+
+#formu-01 .nf-form-content .nf-field-container { margin-bottom: 10px !important; }
+
+#formu-01 .nf-form-content .list-select-wrap .nf-field-element>div:focus,
+#formu-01 .nf-form-content input:not([type=button]):focus,
+#formu-01 .nf-form-content textarea:focus { background: #1a2741; border: 1px solid #1a2741; color: #fff; transition: all 0.15s ease-out; }
+
+#formu-01 .nf-error.field-wrap .nf-field-element:after { background: #e80000 !important; color: #fff !important; font-family: FontAwesome; font-size: 20px !important; content: "\f12a"; position: absolute !important; top: 1px !important; right: 1px !important; bottom: 1px !important; height: 42px !important; width: 42px !important; line-height: 1em !important; padding: 11px 0 !important; text-align: center !important; border-radius: 25px !important; transition: all 0.3s ease-in !important; }
+
+#formu-01 #nf-field-17 { width: auto !important; height: auto !important; display: block !important; font-size: 1.15em !important; line-height: 0.9em !important; letter-spacing: 0.095em !important; text-align: center !important; color: #1a2741 !important; font-weight: 400 !important; margin: 0 auto !important; padding: 13px 25px !important; float: left !important; text-transform: uppercase !important; background: #C19E57 !important; border-radius: 25px !important; outline: none !important; transition: all 0.3s ease-in !important; }
+#formu-01 #nf-field-17:hover { background: #1a2741 !important; color: #fff !important; padding: 13px 30px !important; transition: all 0.15s ease-out !important; }
+
+#formu-01 .nf-after-field { display: none !important; }
+#formu-01 #nf-field-2-container { margin-bottom: 7px !important; }
+#formu-01 #nf-field-9-container { margin-bottom: 7px !important; }
+#formu-01 #nf-field-10-container { margin-bottom: 0 !important; }
+
+
+
+/* Footer */
+footer.entry-footer { display: none; }
+
+footer { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; background: #1a2741; }
+footer article { width: 950px; height: auto; display: block; margin: 0 auto; float: none; position: relative; padding: 90px 0; }
+footer article nav { width: 115px; height: 45px; display: block; margin: 0 auto 55px; float: none; position: relative; }
+footer article nav a { width: 45px; height: 45px; display: block; margin: 0 6px; float: left; font-family: 'Oswald', sans-serif; text-align: center; line-height: 1em; padding: 10px 10px; font-weight: 400 !important; color: #fff; font-size: 1.55em; background: #C19E57; border-radius: 25px; transition: all 0.3s ease-in; }
+footer article nav a:hover { color:#C19E57; background: #fff; transition: all 0.15s ease-out; }
+
+footer article > a { width: 190px; height: 60px; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+footer article > a:hover { opacity: 0.85; transition: all 0.15s ease-out; }
+
+i.fab.fa-instagram {padding: 3px 0 0 0; }
+i.fab.fa-facebook-f { padding: 3px 0 0 0; }
+
+
+
+/* Zona Responsive */
+@media only screen and (max-width: 1249px) {
+	main#content section#row-testimonios { display: none; }
+	
+	main#content section#slide-consultor article { width: 80%; }
+	main#content section#slide-consultor article div.slick-consultor { height: auto; }
+	main#content section#slide-consultor article div.slick-consultor img { width: 100%; height: auto; }
+}
+	
+@media only screen and (max-width: 1199px) {
+    aside#menu-movil { display: block; }
+    header#masthead article#menu { width: 90%; }
+    header#masthead article#menu nav.menu-principal { display: none; }
+	
+	main#content div section#slide { height: auto !important; }
+	main#content div section#slide article { width: 80%; height: auto; padding: 75px 0; }
+	main#content div section#slide article div#avanz { float: none; width: 100%; margin: 0 auto !important; height: auto !important; }
+	main#content div section#slide article div#avanz a { margin: 0; float: none; }
+	
+	.page-id-20 main#content div section#slide { height: auto; }
+	.page-id-20 main#content div section#slide article { height: auto; }
+	.page-id-20 main#content div section#slide article div#avanz { margin: 0 auto; }
+	.page-id-20 main#content div section#slide article div#avanz p { padding: 30px 0 0 0; }
+	
+	.page-id-218 main#content div section#slide { height: auto; }
+	.page-id-218 main#content div section#slide article { height: auto; }
+	.page-id-218 main#content div section#slide article div#avanz { width: 290px; margin: 0 auto; }
+	.page-id-218 main#content div section#slide article div#avanz p { padding: 30px 0 0 0; }
+	
+	main#content div section#slide article figure { display: none; }
+	
+	main#content div section#segundo article { width: 80%; height: auto; padding: 55px 0; }
+	main#content div section#segundo article div#fondo { display: none; }
+	main#content div section#segundo article div#titulo { width: 100%; height: auto; float: none; top: 0; left: 0; margin: 0 auto; padding: 5% 5% 6%; position: relative; background: #1a2741; }
+	main#content div section#segundo article div#titulo h4 { margin: 0 auto; padding: 0; }
+	main#content div section#segundo article div#titulo h5 { font-size: 3.2em; text-align: center; margin: 0 auto; }
+    main#content div section#segundo article div#foto-texto { width: 100%; float: none; height: auto; padding: 0 0 35px; }
+	main#content div section#segundo article div#foto-texto figure { height: 335px; background: url(https://www.avanz.com.co/wp-content/uploads/2020/09/somos.jpg) no-repeat bottom center; background-size: cover; }
+	main#content div section#segundo article div#foto-texto p { width: 100%; font-size: 1.2em; margin: 20px auto 0; }
+	
+	main#content div section#row-blog article { width: 80%; }
+	main#content div section#row-blog article ul.lcp_catlist li { height: auto; }
+	main#content div section#row-blog article ul.lcp_catlist li a:nth-child(1) { position: relative; width: 100%; }
+	main#content div section#row-blog article ul.lcp_catlist li a:nth-child(2) { position: relative; margin: 15px auto 0; height: auto; }
+	
+	main#content div section#consultorias article div#info a.to-valoracion { height: auto; margin: 15px auto 0;  padding: 15px; }
+	main#content div section#cursosytalleres article div#info-cursos a.to-valoracion { height: auto; margin: 15px auto 0;  padding: 15px; }
+	main#content div section#charlas article div#info-charlas a.to-valoracion { height: auto; margin: 15px auto 0;  padding: 15px; }
+	main#content div section#servicios article div#info-servicios a.to-valoracion { height: auto; margin: 15px auto 0;  padding: 15px; }
+	
+	main#content section#row-aliados article { width: 80%; height: auto; }
+	main#content section#row-aliados article h6 { font-size: 1.55em; text-align: center; margin: 0 auto 25px auto; }
+	main#content section#row-aliados article img { margin: 20px auto; float: none; }
+	main#content section#row-aliados article img:nth-child(5) { margin: 20px auto; }
+	main#content section#row-aliados article img:nth-child(6) { height: 90px; }
+	main#content section#row-aliados article img:nth-child(7) { margin: 20px auto; }
+	
+	a.a-desktop { display: none; }
+	a.a-mobile { display: block; }
+	
+	main#content section#slide-beneficios article { width: 90%; height: auto; padding: 75px 0; }
+	main#content section#slide-beneficios article div.slick-beneficios { width: 100%; height: auto; }
+	main#content section#slide-beneficios article div.slick-beneficios div.box-beneficios { width: 100%; height: auto; }
+	main#content section#slide-beneficios article div.slick-beneficios div.box-beneficios a.to-consultorias { bottom: 0; left: 0; border-radius: 0 15px 0 0; }
+	
+	.slick-next, .slick-prev { display: none !important; }
+	
+    footer article { width: 190px; }
+}
+
+@media only screen and (max-width: 1099px) {
+	main#content div section#trabaja-con-nosotros article { width: 80%; height: auto; }
+	main#content div section#trabaja-con-nosotros article figure { margin: 0 auto; float: none; }
+	main#content div section#trabaja-con-nosotros article div#texto { width: 100%; height: auto; margin: 50px auto; float: none; }
+	main#content div section#trabaja-con-nosotros article div#texto p { text-align: center; }
+	
+	main#content div section#trabaja-con-nosotros article div.texto { width: 100%; height: auto; margin: 0 auto 35px; float: none; }
+	main#content div section#trabaja-con-nosotros article div.texto:nth-child(2) { margin: 0 auto; }
+	main#content div section#trabaja-con-nosotros article div.texto h5 { text-align: center; }
+	main#content div section#trabaja-con-nosotros article div.texto p { text-align: center; }
+	
+	.page-id-12 main#content div section#slide article div#avanz { width: 100%; }
+	.page-id-12 main#content div section#slide article div#avanz h2.trabaja { font-size: 2.35em; }
+	
+	main#content div section#contacto article { width: 80%; height: auto; }
+	main#content div section#contacto article figure { width: 100%; height: auto; margin: 0 auto; float: none; }
+	main#content div section#contacto article figure div.escribenos h5 { text-align: center; }
+	main#content div section#contacto article figure div.escribenos p { text-align: center; }
+	main#content div section#contacto article div#formulario { width: 100%; margin: 0 auto; float: none; }
+	
+	main#content div section#contactenos article { width: 80%; height: auto; padding: 90px 0 55px; }
+	main#content div section#contactenos article div#contacto { width: 100%; height: 180px; margin: 0 auto 55px; float: none; }
+	main#content div section#contactenos article div#contacto h6 { text-align: left; }
+	
+	main#content div section#contactenos article div#contacto a { width: 270px; margin: 0 0 7px; }
+	main#content div section#contactenos article div#contacto a:nth-child(4) { margin: 0 0 7px; }
+	
+	main#content div section#contactenos article div#contacto a#boton-work-us { float: none; margin: 15px 0 0; }
+	main#content div section#contactenos article div#formulario { width: 100%; height: auto; margin: 0 auto; float: none; }
+	
+	main#content div section#row-test article { width: 80%; }
+	main#content div section#row-test article div#box-test figure { width: 100%; }
+	main#content div section#row-test article div#box-test figure div.box-pregunta h5 { font-size: 1.75em; }
+	main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados p { font-size: 2.35em; }
+	
+	main#content div section#tercero article { width: 80%; height: auto; }
+	main#content div section#tercero article div { width: 100%; height: auto; margin: 0 auto 35px; float: none; }
+	main#content div section#tercero article div h4 { text-align: center; margin: 0 auto 10px; }
+	main#content div section#tercero article div h5 { text-align: center; }
+	main#content div section#tercero article div figure { width: 100%; }
+	main#content div section#tercero article div p { width: 100%; text-align: center; margin: 17px auto; }
+	
+	main#content div section#tercero nav { width: 275px; }
+	
+	.single-post main#main { width: 80%; }
+}
+
+@media only screen and (max-width: 999px) {
+	/*Página servicios*/
+	.page-id-10 main#content div section#slide article div#avanz p.fs {  width: 100%;}
+	main#content div section#consultorias { height: auto;}
+	main#content div section#consultorias article { width: 340px; height: 695px; padding: 0; }
+	main#content div section#consultorias article div.barra-color { height: 351px; margin: 0 0 32px 0; float: none;}
+	main#content div section#consultorias article figure { top: 85px; }
+	main#content div section#consultorias article div#info { width: 100%; float: none; margin: 0 auto;}
+	
+	main#content div section#cursosytalleres {height: auto;}
+	main#content div section#cursosytalleres article { width: 340px; height: 678px; padding: 0; }
+	main#content div section#cursosytalleres article div#info-cursos { width: 100%; height: 200px; float: none; margin: 0 auto 32px; }
+	main#content div section#cursosytalleres article div.barra-color-2 { height: 351px; margin: 35px 0 0 0; float: right; }
+	main#content div section#cursosytalleres article figure { top: 380px; }
+	
+	main#content div section#charlas { height: auto; }
+	main#content div section#charlas article { width: 340px; height: 785px; padding: 0; }
+	main#content div section#charlas article div.barra-color { height: 351px; margin: 0 0 32px 0; float: none; }
+	main#content div section#charlas article figure { top: 53px; }
+	main#content div section#charlas article div#info-charlas { width: 100%; float: none; margin: 0 auto; }
+	
+	main#content div section#servicios { height: auto;}
+	main#content div section#servicios article { width: 340px; height: 847px; padding: 0; margin: 0 auto 80px; }
+	main#content div section#servicios article div#info-servicios {width: 100%;  float: none; margin: 0 auto; }
+	main#content div section#servicios article div.barra-color-2 { height: 351px; margin: 35px 0 0 0; float: right; }
+	main#content div section#servicios article figure { top: 550px; }
+	main#content div section#servicios article div#info-servicios h6 { width: 100%; }
+	
+	main#content div section#consultorias article div#info a.to-valoracion,
+	main#content div section#cursosytalleres article div#info-cursos a.to-valoracion,
+	main#content div section#charlas article div#info-charlas a.to-valoracion,
+	main#content div section#servicios article div#info-servicios a.to-valoracion { width: 100%; }
+	main#content div section#row-test article div#box-test figure div.box-pregunta div#box-resultados a.to-valoracion { width: 100%; height: auto; margin: 15px auto 0;  padding: 15px; }
+	
+	main#content div section#servicios article div#info-servicios p { width: 100%; }
+	
+	.single-post main#main article div.entry-content h3 { font-size: 1.75em; }
+	
+	main#content div section#row-blog article ul.lcp_catlist li a:nth-child(1) { font-size: 2.75em; }
+	
+	main#content section#slide-consultor div.n2-section-smartslider { width: 80% !important; }
+	main#content section#slide-consultor div.n2-section-smartslider .n2-ss-layers-container { width: 80% !important; max-width: 80% !important; float: none !important; margin: 74px auto !important; height: auto !important; }
+}
+
+@media only screen and (max-width: 699px) {
+	main#content div section#cuarto article#vision { width: 85%; }
+	main#content div section#cuarto article#vision h5 { font-size: 2.4em; }
+	main#content div section#cuarto article#vision h6 { font-size: 2.4em; }
+	
+	main#content div section#cuarto article#vision p { width: 100%; }
+}
+   
+@media only screen and (max-width: 599px) {
+     main#content div section#segundo article div#titulo { padding: 9% 9% 10%; }
+	 main#content div section#segundo article div#titulo h5 { font-size: 2.35em; }
+	
+	 main#content div section#contactenos article { height: auto;}
+     main#content div section#contactenos article div#formulario { height: auto; margin: 25px auto 0; }
+	
+	main#content section#slide-consultor article { width: 100%; padding: 0; }
+	
+	.single-post main#main article header.entry-header h1.entry-title { font-size: 2.75em; }
+	
+	#formu-01 { width: 90% !important; padding: 30px !important; }
+}
+
+@media only screen and (max-width: 499px) {
+	main#content div section#slide article div#avanz h2.trabaja { font-size: 3em; }
+	main#content div section#slide article div#avanz p.trabajo { font-size: 1.3em; }
+}
+
+@media only screen and (max-width: 448px) {
+	main#content div section#slide article div#avanz h2 { font-size: 2.55em; line-height: 1em; }
+}
+
+@media only screen and (max-width: 399px) {
+	 /*Página servicios*/
+	 main#content div section#consultorias article { width: 300px; height: 765px; }
+	 main#content div section#consultorias article div.barra-color { width: 90px; height: 337px; }
+	 main#content div section#consultorias article figure { width: 328px; height: 220px; left: -13px; top: 146px; }
+	 main#content div section#consultorias article div#info h4 { font-size: 2.9em; }
+	 main#content div section#consultorias article div#info nav.pop-up-consultoria a { font-size: 1.3em;}
+	 
+	 main#content div section#cursosytalleres article { width: 300px; height: 765px; }
+	 main#content div section#cursosytalleres article div.barra-color-2  { width: 90px; height: 337px; }
+	 main#content div section#cursosytalleres article figure {width: 328px; height: 220px; left: -13px; top: 370px; }
+	 main#content div section#cursosytalleres article div#info-cursos h4 { font-size: 2.9em; }
+	 main#content div section#cursosytalleres article div#info-cursos nav.pop-up-cursos a { font-size: 1.3em; } 
+	 
+	 main#content div section#charlas article  { width: 300px; height: 765px; }
+	 main#content div section#charlas article div.barra-color { width: 90px;height: 337px; }
+	 main#content div section#charlas article figure { width: 328px; height: 220px; left: -13px; top: 139px; }
+	 main#content div section#charlas article div#info-charlas h4 { font-size: 2.6em; }
+	 
+	 main#content div section#servicios article  { width: 300px; height: 765px; }
+	 main#content div section#servicios article div#info-servicios h4 { font-size: 2.9em; width: 297px; }
+	 main#content div section#servicios article div.barra-color-2 { width: 90px; height: 337px; margin: 29px 0 0 0; }
+	 main#content div section#servicios article figure { width: 328px; height: 220px; left: -13px; top: 536px; }
+	 
+	 main#content div section#slide article div#avanz h2.trabaja { font-size: 2.7em; }
+}
+
+@media only screen and (max-width: 392px) {
+	main#content div section#segundo article { width: 87%; }
+}
+
+@media only screen and (max-width: 349px) {
+	main#content div section#segundo article div#titulo h5 { font-size: 1.75em; }
+	
+	main#content div section#consultorias article { width: 270px; height: 765px; }
+	main#content div section#consultorias article div.barra-color { width: 81px; height: 296px; }
+	main#content div section#consultorias article figure {  width: 288px;  height: 191px;  left: 0;}
+	main#content div section#consultorias article div#info h4 { font-size: 2.5em;}
+	
+	main#content div section#cursosytalleres article { width: 270px; height: 560px; }
+	main#content div section#cursosytalleres article div.barra-color-2  { width: 81px;  height: 296px;}
+	main#content div section#cursosytalleres article figure {width: 288px;  height: 191px;  right: -14px;}
+	main#content div section#cursosytalleres article div#info-cursos h4 { font-size: 2.5em;}
+	
+	main#content div section#charlas article  { width: 270px; height: 765px; }
+	main#content div section#charlas article div.barra-color { width: 81px;  height: 296px;}
+	main#content div section#charlas article figure { width: 288px;  height: 191px;  left: 0;}
+	main#content div section#charlas article div#info-charlas h4{ font-size: 2.4em;}
+	
+	main#content div section#servicios article  { width: 270px; height: 765px; }
+	main#content div section#servicios article div#info-servicios h4 { font-size: 2.5em;width: 256px;}
+	main#content div section#servicios article div.barra-color-2 {  width: 81px;  height: 296px;}
+	main#content div section#servicios article figure { width: 288px;  height: 191px; right: -14px;}
+}
+
+
+
